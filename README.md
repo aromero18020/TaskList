@@ -39,7 +39,7 @@ Project is: IN PROGRESS
 
 ## Room for Improvement
 
-Room for improvement:
+Areas to improve:
 - 
 - 
 
@@ -52,12 +52,11 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
 - Andres Romero(aromero18020)
 - Annette Sheriff(ohnetter)
 - Joseph MacCormick(majick66)
 - Judith Slagle(jfslagle)
-- Erica McLaurin()
+- Erica McLaurin(erica12327)
 
 
 ## Contact
@@ -65,4 +64,4 @@ Give credit here.
 - Annette Sheriff(ohnetter)
 - Joseph MacCormick(majick66)
 - Judith Slagle(jfslagle)
-- Erica McLaurin()
+- Erica McLaurin(erica12327)
