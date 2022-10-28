@@ -1,6 +1,6 @@
 #Project-Title
 > Title: JWD-Final-Project-Tasklist
-> Live: 
+> Live: https://aromero18020.github.io/JWD-Final-Project-Tasklist/
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -54,15 +54,15 @@ To do:
 ## Acknowledgements
 Give credit here.
 - Andres Romero(aromero18020)
-- Annette Sheriff()
-- Joseph MacCormick()
-- Judith Slagle()
+- Annette Sheriff(ohnetter)
+- Joseph MacCormick(majick66)
+- Judith Slagle(jfslagle)
 - Erica McLaurin()
 
 
 ## Contact
 - Andres Romero(aromero18020)
-- Annette Sheriff()
-- Joseph MacCormick()
-- Judith Slagle()
+- Annette Sheriff(ohnetter)
+- Joseph MacCormick(majick66)
+- Judith Slagle(jfslagle)
 - Erica McLaurin()
