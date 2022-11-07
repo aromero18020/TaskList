@@ -3,5 +3,16 @@
     padding: 0;
 }
 
+header {
+    text-align: center;
+    margin-top: 1.5%;
+}
 
+hr {
+    width: 50%;
+    margin: auto;
+}
 
+.card {
+    left: 10%;
+}
