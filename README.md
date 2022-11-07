@@ -1,6 +1,6 @@
 #Project-Title
 > Title: JWD-Final-Project-Tasklist
-> Live: https://aromero18020.github.io/JWD-Final-Project-Tasklist/
+> Live: https://aromero18020.github.io/TaskList/
 
 ## Table of Contents
 * [General Info](#general-information)
