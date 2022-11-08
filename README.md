@@ -55,6 +55,7 @@ To do:
 - Joseph MacCormick(majick66)
 - Judith Slagle(jfslagle)
 - Erica McLaurin(erica12327)
+- Credit to: carpe numidium for the css animated background
 
 
 ## Contact
