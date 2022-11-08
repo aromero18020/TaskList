@@ -44,10 +44,8 @@ Areas to improve:
 - 
 
 To do:
-- Design Wireframe
-- Create HTML Structure
-- Implement Bootstrap
-- 
+- add styling to bootstrap layout
+- add javascript interactivity
 
 
 
