@@ -35,10 +35,37 @@ html {
 
   body {
     background-color: transparent;
+    font-family: 'Sora' sans-serif;
   }
 header {
     text-align: center;
     margin-top: 1.5%;
+}
+.btn{
+background: #A6C355;
+border: 1px solid #3d5047;
+color: #1f1f23;
+padding: 10px;
+cursor: pointer;
+outline: none;
+position: relative;
+animation: all 1s;
+overflow: hidden;
+border-radius: 10px;
+font-weight: bold;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#A6C355, white);
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn:hover {
+  color: #1f1f23;
+  background-color: #E9ECEF;
 }
 
 hr {
