@@ -44,8 +44,11 @@ Areas to improve:
 - 
 
 To do:
-- add styling to bootstrap layout
-- add javascript interactivity
+- Correct the contrast styling of all header tags to reflect correctly against dark and light backgrounds. 
+- Add mouse hover effects to all interactive fields
+- Add responsive positioning to task description box to be displayed to the left and directly under the task name field to match web flow on smaller screens. 
+- Reposition the Delete Task button to the top left of task card and change color to red with white text and add hover effect changing color to light green with black text.
+- **PENDING FUTURE COURSEWORK**add javascript storage and interactivity
 
 
 
