@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TaskList</title>
     <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/336e3f7f73.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header id="tsparticles">
     <h1><i class="fa-solid fa-list-check"></i> Task Manager</h1>
     <hr>
 </header>
@@ -29,17 +29,17 @@
     <div class="row">
       <div class="col">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Name of Task: </span>
+            <span class="input-group-text task-name" id="inputGroup-sizing-default">Name of Task: </span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
           </div>
       </div>
       <div class="col-5">
-        <label for="exampleFormControlTextarea1" class="form-label">Task Description: </label>
+        <label for="exampleFormControlTextarea1" class="form-label task-description" id="task-descrip">Task Description: </label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
       </div>
       <div class="col">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Date: </span>
+            <span class="input-group-text task-date" id="inputGroup-sizing-default">Date: </span>
             <input type="date" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
           </div>
       </div>
@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col">
         <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01">Assigned To:</label>
+            <label class="input-group-text assigned-to" for="inputGroupSelect01">Assigned To:</label>
             <select class="form-select" id="inputGroupSelect01" required>
               <option selected>Select A User...</option>
               <option value="1">Andres Romero</option>
@@ -63,7 +63,7 @@
       </div>
       <div class="col">
         <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01">Status</label>
+            <label class="input-group-text task-status" for="inputGroupSelect01">Status</label>
             <select class="form-select" id="inputGroupSelect01" required>
               <option selected>In Progress</option>
             </select>
@@ -86,28 +86,29 @@
 
 <div class="card" style="width: 80%;">
     <div class="card-body">
-      <h5 class="card-title">Task Name: 1</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Assigned To:</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Due Date:</h6>
+      <h5 class="card-title">Task Name:</h5>
+      <h6 class="card-subtitle mb-2">Assigned To:</h6>
+      <h6 class="card-subtitle mb-2">Due Date:</h6>
       <p class="card-text">Task Description: </p>
-      <button type="button" class="btn btn-sm right-top-align" id="right-top-align">Delete Task</button>
+      <button type="button" class="btn btn-sm right-top-align delete-task">Delete Task</button>
     </div>
   </div>
-
 
   <div class="card" style="width: 80%;">
     <div class="card-body">
-      <h5 class="card-title">Task Name: 2</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Assigned To:</h6>
-      <h6 class="card-subtitle mb-2 text-muted">Due Date:</h6>
+      <h5 class="card-title">Task Name:</h5>
+      <h6 class="card-subtitle mb-2">Assigned To:</h6>
+      <h6 class="card-subtitle mb-2">Due Date:</h6>
       <p class="card-text">Task Description: </p>
-      <button type="button" class="btn btn-sm" id="right-top-align">Delete Task</button>
+      <button type="button" class="btn btn-sm delete-task">Delete Task</button>
     </div>
   </div>
-
 
 </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- TypeScript Particles-->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.5.3/tsparticles.bundle.min.js"></script>
+    <script src="./assets/javascript/ts-particles.js"></script>
 </body>
 </html>
