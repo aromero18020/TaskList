@@ -30,29 +30,56 @@ html {
     500px 200px,
     1000px,
     400px 260px;
-  animation: 50s para infinite linear;
+  animation: 80s para infinite linear;
   }
 
   body {
     background-color: transparent;
     font-family: 'Sora' sans-serif;
   }
+
+  h1{
+    background-image: linear-gradient(0.3deg, #697A50, #6D9BC3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px #ffffff;
+    font-weight: bold;
+  }
+
+  h2 {
+    color: #697a50;
+    font-weight: bold;
+  }
+
+  #task-descrip{
+    color: #697a50;
+    text-shadow: 3px #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
 header {
     text-align: center;
     margin-top: 1.5%;
 }
+#task-list-header {
+  text-align: center;
+  margin: 0 auto;
+}
 .btn{
-background: #A6C355;
-border: 1px solid #3d5047;
-color: #1f1f23;
-padding: 10px;
-cursor: pointer;
-outline: none;
-position: relative;
-animation: all 1s;
-overflow: hidden;
-border-radius: 10px;
-font-weight: bold;
+  text-shadow: 3px #ffffff;
+  background: #697A50;
+  border: 1px solid #3d5047;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 5%;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  animation: all 1s;
+  overflow: hidden;
+  border-radius: 10px;
+  font-weight: bold;
 }
 .btn:before {
   content: "";
@@ -64,22 +91,53 @@ font-weight: bold;
   z-index: -1;
 }
 .btn:hover {
-  color: #1f1f23;
-  background-color: #E9ECEF;
+  color: #ffffff;
+  background-color: #A6C355;
 }
 
 hr {
     width: 50%;
-    margin: auto;
-}
-
-#task-list-header {
-  color: white;
+    margin: 0 auto;
+    color: darkgreen;
 }
 
 .card {
     left: 10%;
 }
+
+.card:hover {
+
+}
+
+.delete-task {
+  position: absolute;
+  top: 10%;
+  left: 90%;
+  background-color: rgb(255, 0, 0, 0.5);
+  color: white;
+  animation: all 1s;
+}
+
+.delete-task:hover {
+  background-color: red;
+  color: white;
+}
+
+.task-name,
+.task-description,
+.task-date,
+.task-status,
+.assigned-to {
+  color: green;
+  font-weight: bold;
+}
+
+.form-control:hover,
+.form-select:hover {
+  background-color: #A6C355;
+}
+
+
 
 
 @keyframes para {
@@ -92,3 +150,4 @@ hr {
       400px 0;
     }
   }
+
