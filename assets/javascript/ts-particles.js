@@ -12,7 +12,7 @@ tsParticles.load('tsparticles',{
             enable: true,
             speed: {
                 min: 1,
-                max: 3,
+                max: 4,
             },
         },
         opacity: {
@@ -24,7 +24,7 @@ tsParticles.load('tsparticles',{
         size: {
             value: {
                 min: 1,
-                max: 4,
+                max: 5,
             },
         },
     },

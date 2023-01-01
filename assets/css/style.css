@@ -1,213 +1,63 @@
-/* Bootstrap icons import */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* Resetting Padding & Margin */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-:root,
-:root.light{
-  height: 100%;
-  /* max-height: 600px; */
-  width: 100%;
-  background-color: hsla(200,40%,30%, .3);
-  background-image:   
-    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  background-repeat: repeat-x;
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 80s para infinite linear;
+:root {
+  color: white;
+  background-image: url(../images/Day-Cabin.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+:root.light {
+  color: white;
+  background-image: url(../images/Day-Cabin.jpg);
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 :root.dark {
-  height: 100%;
-  /* max-height: 600px; */
-  width: 100%;
-  background-color: hsla(200,40%,30%, 9);
-  background-image:   
-    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  background-repeat: repeat-x;
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 80s para infinite linear;
+  color: black;
+  background-image: url(../images/Night-Cabin.jpg);
+  background-position: 0% 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+/* html {
+
+} */
+
+body {
+  background-color: transparent;
 }
 
-html {
-  height: 100%;
-  /* max-height: 600px; */
-  width: 100%;
-  background-color: hsla(200,40%,30%, .3);
-  background-image:   
-    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  background-repeat: repeat-x;
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 80s para infinite linear;
-  }
-
-  body {
-    background-color: transparent;
-    font-family: 'Sora' sans-serif;
-  }
-
-  .container {
-    margin-top: 2%;
-  }
-
-  h1{
-    background-image: linear-gradient(0.3deg, #697A50, #6D9BC3);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 3px #ffffff;
-    font-weight: bold;
-  }
-
-  h2 {
-    color: #697a50;
-    font-weight: bold;
-  }
-
-  #task-descrip{
-    color: #697a50;
-    text-shadow: 3px #ffffff;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  .description-container {
-    max-width: 60%;
-  }
-header {
-    text-align: center;
-    margin-top: 1.5%;
-}
-#task-list-header {
+.center-aligned {
   text-align: center;
-  margin: 0 auto;
-  margin-top: 5.5%;
-  width: 30%;
-  border-radius: 10px;
-  background-color: black;
-  background-image: linear-gradient(0.3deg, #697A50, #6D9BC3);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 3px #ffffff;
-  font-weight: bold;
 }
-.btn{
-  text-shadow: 3px #ffffff;
-  background: #697A50;
-  border: 1px solid #3d5047;
-  color: #ffffff;
-  padding: 10px;
-  margin-top: 5%;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  animation: all 1s;
-  overflow: hidden;
-  border-radius: 10px;
-  font-weight: bold;
+
+#alert {
+  display: none;
 }
-.btn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(#A6C355, white);
-  transition: all 0.3s;
-  z-index: -1;
-}
-.btn:hover {
-  color: #ffffff;
-  background-color: #A6C355;
+
+h1, h2 {
+  color: black;
 }
 
 hr {
-    width: 50%;
-    margin: 0 auto;
-    color: darkgreen;
+  border: 1px solid black;
+  opacity: 1;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
-.card {
-    left: 10%;
-}
 
-.card:hover {
-
-}
-
-.delete-task {
-  position: absolute;
-  top: 10%;
-  left: 90%;
-  background-color: rgb(255, 0, 0, 0.5);
-  color: white;
-  animation: all 1s;
-}
-
-.delete-task:hover {
-  background-color: red;
-  color: white;
-}
-
-.task-name,
-.task-description,
-.task-date,
-.task-status,
-.assigned-to {
-  color: green;
-  font-weight: bold;
-}
-
-.form-control:hover,
-.form-select:hover {
-  background-color: #D3D3D3;
+.form-control {
+  border: 1px solid black;
 }
 
 .theme-btn {
@@ -218,99 +68,3 @@ hr {
   cursor: pointer;
   border: none;
 }
-
-.theme-btn:hover {
-  color: rgb(168, 83, 83);
-}
-
-html.dark {
-  height: 100%;
-  /* max-height: 600px; */
-  width: 100%;
-  background-color: hsla(200,40%,30%, 9);
-  background-image:   
-    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  background-repeat: repeat-x;
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 80s para infinite linear;
-}
-
-body.dark {
-  background-color: transparent;
-  font-family: 'Sora' sans-serif;
-}
-
-html.light {
-  height: 100%;
-  /* max-height: 600px; */
-  width: 100%;
-  background-color: hsla(200,40%,30%, .3);
-  background-image:   
-    url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
-    url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
-    url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
-    url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
-  background-repeat: repeat-x;
-  background-position: 
-    0 20%,
-    0 100%,
-    0 50%,
-    0 100%,
-    0 0;
-  background-size: 
-    2500px,
-    800px,
-    500px 200px,
-    1000px,
-    400px 260px;
-  animation: 80s para infinite linear;
-}
-
-body.light {
-  background-color: transparent;
-  font-family: 'Sora' sans-serif;
-}
-
-
-
-
-
-
-@keyframes para {
-  100% {
-    background-position: 
-      -5000px 20%,
-      -800px 95%,
-      500px 50%,
-      1000px 100%,
-      400px 0;
-    }
-  }
-
-  @media screen and (min-width: 0px) and (max-width: 1000px) {
-    .delete-task {
-      position: absolute;
-      left: 75%;
-    }
-  }
-
-  @media screen and (min-width: 0px) and (max-width: 700px) {
-
-  }
-
