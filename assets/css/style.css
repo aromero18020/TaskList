@@ -68,3 +68,42 @@ hr {
   cursor: pointer;
   border: none;
 }
+
+.t-list, .create, .task-name, .task-descrip, .date, .assigned-to, .status, .task-list {
+  color: hsl(47, 49%, 91%);
+}
+
+.add-taskbtn {
+display: block;
+margin: 0 auto;
+margin-top: 15px;
+ color: #f4f4f4;
+ text-decoration: none;
+ border: 1px solid #ffbd5b;
+ overflow: hidden;
+}
+.add-taskbtn:hover {
+  box-shadow: 1px 1px 25px 10px;
+  background-color: #e2a370;
+}
+.add-taskbtn::before {
+  content: "";
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient (120def, transparent, rgba(146, 148, 248, 0.4), transparent);
+  transition: all 650ms;
+}
+.add-taskbtn::before {
+  left: 100%;
+}
+
+.alert {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 160px;
+  margin-right: 160px;
+  text-align: center;
+}
