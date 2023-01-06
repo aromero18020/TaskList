@@ -74,7 +74,7 @@ hr {
   color: hsl(47, 49%, 91%);
 }
 
-.add-taskbutn {
+.add-taskbtn {
 display: block;
 margin: 0 auto;
 margin-top: 15px;
@@ -83,11 +83,11 @@ margin-top: 15px;
  border: 1px solid #ffbd5b;
  overflow: hidden;
 }
-.add-taskbutn:hover {
+.add-taskbtn:hover {
   box-shadow: 1px 1px 25px 10px;
   background-color: #e2a370;
 }
-.add-taskbutn::before {
+.add-taskbtn::before {
   content: "";
   top: 0;
   left: -100%;
@@ -96,7 +96,7 @@ margin-top: 15px;
   background: linear-gradient (120def, transparent, rgba(146, 148, 248, 0.4), transparent);
   transition: all 650ms;
 }
-.add-taskbutn::before {
+.add-taskbtn::before {
   left: 100%;
 }
 
