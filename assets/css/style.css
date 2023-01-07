@@ -69,7 +69,6 @@ hr {
   border: none;
 }
 
-
 .t-list, .create, .task-name, .task-descrip, .date, .assigned-to, .status, .task-list {
   color: hsl(47, 49%, 91%);
 }
