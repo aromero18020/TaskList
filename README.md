@@ -15,7 +15,7 @@
 
 
 ## General Information
-- GenUSA JWD Final Project. This project is to function as a task list.
+- GenUSA JWD Final Project. This project is to function as a task list or to-do app that stores tasks to local storage, and allows the ability to mark as complete, delete, or edit tasks.
 
 
 ## Technologies Used
@@ -23,6 +23,7 @@
 - CSS3
 - Javascript
 - Bootstrap
+- TypeScript
 
 
 ## Features
@@ -44,11 +45,12 @@ Areas to improve:
 - 
 
 To do:
-- Correct the contrast styling of all header tags to reflect correctly against dark and light backgrounds. 
-- Add mouse hover effects to all interactive fields
-- Add responsive positioning to task description box to be displayed to the left and directly under the task name field to match web flow on smaller screens. 
-- Reposition the Delete Task button to the top left of task card and change color to red with white text and add hover effect changing color to light green with black text.
-- **PENDING FUTURE COURSEWORK**add javascript storage and interactivity
+- Correct the contrast styling of all header tags to reflect correctly against dark and light backgrounds.
+- Make h1 and h2 tag titles more exciting. 
+- Add keyboard event functions that change the opacity of the active element from 0.7 to 1 when a user begins typing in the specific field.
+- Reposition delete, edit, and mark complete buttons to display inline, and with adequate spacing between each. 
+- Add alert for if user clicks the delete button, warns them that they are about to delete their task. 
+- Add functionality to the edit button. In its current state, it does not have any functionality. 
 
 
 
@@ -56,14 +58,9 @@ To do:
 - Andres Romero(aromero18020)
 - Annette Sheriff(ohnetter)
 - Joseph MacCormick(majick66)
-- Judith Slagle(jfslagle)
-- Erica McLaurin(erica12327)
-- Credit to: carpe numidium for the css animated background
 
 
 ## Contact
 - Andres Romero(aromero18020)
 - Annette Sheriff(ohnetter)
 - Joseph MacCormick(majick66)
-- Judith Slagle(jfslagle)
-- Erica McLaurin(erica12327)

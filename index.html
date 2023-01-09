@@ -1,107 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TaskList</title>
-    <!-- Bootstrap CSS Only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/336e3f7f73.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/336e3f7f73.js" crossorigin="anonymous" defer></script>
     <!-- Google Font Imports -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora&family=Space+Mono&display=swap" rel="stylesheet"/>
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-    <!-- Animations -->
-
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <!-- Music Player Icons -->
+    <link rel="stylesheet" href="https://icono-49d6.kxcdn.com/icono.min.css">
 </head>
-<body>
 
+<body>
     <!-- Dark mode Moon Icon -->
-    <button class="theme-btn dark left-aligned" title="Dark Mode">
-        <i class="fas fa-moon"></i>
-    </button>
+    <button class="theme-btn dark left-aligned" title="Dark Mode"><i class="fas fa-moon"></i></button>
 
     <!-- Light Mode Sun Icon -->
-    <button class="theme-btn light left-aligned" title="Light Mode" style="display: none;">
-        <i class="fas fa-sun"></i>
-    </button>
+    <button class="theme-btn light left-aligned theme-btn-light" title="Light Mode" style="display: none"><i class="fas fa-sun"></i></button>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <span id="tsparticles"></span>
-                <h1 class="center-aligned t-list">Task List</h1>
-                <hr>
-            </div>
-
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <h2 class="left-aligned create">Create A Task:</h2>
-                <form id="submitNewTaskForm">
-
-                    <div class="row">
-                    <div class="col-lg-4 col-md-12 col-sm-4 form-group">
-                        <label class="text-center task-name">Task Name: </label>
-                        <input type="text" class="form-control" id="task-name" placeholder="Task Name..." value="">
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-4 form-group">
-                        <label for="task-description" class="task-descrip">Task Description: </label>
-                        <textarea class="form-control" id="task-description" placeholder="Task Description..." rows="6" value=""></textarea>
-                    </div>
-
-                    <div class="col-lg-4 col-md-12 col-sm-4 form-group">
-                        <label for="date" class="date">Date: </label>
-                        <input type="date" class="form-control" id="due-date" placeholder="" value="">
-                    </div>
-
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <label for="assignedUser" class="assigned-to">Assigned To: </label>
-                                <input type="text" class="form-control" id="assigned-user" placeholder="User's Name..." value="">
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-6">
-                            <div class="form-group">
-                                <label for="taskStatus" class="status">Status: </label>
-                                <select class="form-control" id="taskStatus" placeholder="">
-                                    <option>In Progress</option>
-                                    <option>Complete</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="alert" class="alert alert-danger" role="alert">
-                        Please Complete All Required Fields!
-                    </div> 
-                    <button id="submitTask" type="submit" class="btn btn-dark btn-lg btn-block add-taskbtn" style="width: 55%;">Add Task</button>
-                </form>
-            </div>
-
-            <div class="col-12">
-                <br>
-                <h2 class="center-aligned task-list">Task List:</h2>
-                <hr>
-                <span id="taskList"></span>
-            </div>
-
+    <div class="audio-player" autoplay>
+    <div class="timeline">
+        <div class="progress"></div>
+    </div>
+    <div class="controls">
+        <div class="play-container">
+        <div class="toggle-play play"></div>
         </div>
+        <div class="time">
+        <div class="current">0:00</div>
+        <div class="divider">/</div>
+        <div class="length"></div>
+        </div>
+        <div class="name">Winter Lofi Beats</div>
+        <div class="volume-container">
+        <div class="volume-button">
+            <div class="volume icono-volumeMedium"></div>
+        </div>
+
+        <div class="volume-slider">
+            <div class="volume-percentage"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <span id="tsparticles"></span>
+        <h1 class="center-aligned t-list">
+            <i class="bi bi-list-task"></i> Task List
+        </h1>
+        <hr />
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        <h2 class="left-aligned create">Create A Task:</h2>
+        <form id="submitNewTaskForm">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-4 form-group">
+                <input type="text" class="form-control" id="task-name" placeholder="Task Name..." value="" />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-4 form-group">
+                <textarea class="form-control" id="task-description" placeholder="Task Description..." rows="6" value=""></textarea>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-4 form-group">
+                <input type="date" class="form-control" id="due-date" placeholder="" value="" min="2023-01-01" max="2095-12-31"
+                />
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="assigned-user" placeholder="User's Name..." value="" />
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="form-group">
+                <select class="form-control" id="taskStatus" placeholder="">
+                    <option selected disabled>Select A Status...</option>
+                    <option>In Progress</option>
+                    <option>Complete</option>
+                </select>
+                </div> </div>
+            </div>
+            <div id="alert" class="alert alert-danger" role="alert"> Please Complete All Required Fields!
+            </div>
+            <button id="submitTask" type="submit" class="btn btn-dark btn-lg btn-block add-taskbtn" style="width: 55%">
+            Add Task
+            </button>
+        </form>
+        </div>
+
+        <div class="col-12">
+        <br />
+        <h2 class="center-aligned task-list">Task List:</h2>
+        <hr />
+        <span id="taskList"></span>
+        </div>
+    </div>
     </div>
 
     <!-- Bootstrap JavaScript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    ></script>
     <!-- Themes Night / Day Mode JavaScript -->
     <script src="./assets/javascript/themes.js"></script>
+    <!-- Events.js -->
+    <script src="./assets/javascript/events.js"></script>
     <!-- TypeScript Particles-->
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.5.3/tsparticles.bundle.min.js"></script>
     <script src="./assets/javascript/ts-particles.js"></script>
@@ -109,5 +128,7 @@
     <script src="./assets/javascript/index.js"></script>
     <!-- Task Manager JavaScript -->
     <script src="./assets/javascript/TaskManager.js"></script>
+    <!-- Music Player JavaScript -->
+    <script src="./assets/javascript/player.js"></script>
 </body>
 </html>
