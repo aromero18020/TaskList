@@ -296,23 +296,23 @@ hr {
 }
 
 .delete-button {
-  width: 10%;
-  border-radius: 5%;
+  width: auto;
+  border-radius: 50%;
 }
 
 .complete-button {
-  width: 10%;
-  border-radius: 5%;
+  width: auto;
+  border-radius: 50%;
 }
 
 .edit-button {
-  width: 10%;
-  border-radius: 5%;
+  width: auto;
+  border-radius: 50%;
 }
 
 .status-buttons {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  justify-content: space-between;
   flex-direction: row;
-  align-items: center;
+  margin: 0 auto;
 }
