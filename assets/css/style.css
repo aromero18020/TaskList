@@ -309,7 +309,7 @@ hr {
   width: auto;
   border-radius: 50%;
 }
-
+/* Changed the delete, complete, edit button border-radius to 50% */
 .status-buttons {
   display: inline-block;
   justify-content: space-between;
