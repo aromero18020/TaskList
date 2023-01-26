@@ -1,6 +1,6 @@
 
 document.getElementById("submitNewTaskForm").addEventListener("submit", function(event) {
-  event.preventDefault(event);
+  event.preventDefault();
   let name = document.querySelector("#task-name").value;
   let description = document.querySelector("#task-description").value;
   let assignedTo = document.querySelector("#assigned-user").value;
@@ -23,7 +23,7 @@ let tasksList = document.querySelector("#taskList");
 
 tasksList.addEventListener('click', (event) => {
   if (event.target.classList.contains('complete-button')) {
-    const parentTask = event.target.parentElement;
+    const parentTask = event.target.closest(".card");
     const taskId = Number(parentTask.dataset.taskId);
     const task = newTask.getTaskById(taskId);
     task.status = 'Complete';
@@ -38,11 +38,11 @@ tasksList.addEventListener('click', (event) => {
     task.description = prompt('New Task Description:');
     task.dueDate = prompt('New Task Due Date (mm/dd/yyyy):');
     task.assignedTo = prompt('New Task Assigned To:');
-    newTask.render();
+  newTask.render();
   }
 
   if (event.target.classList.contains('delete-button')) {
-    const parentTask = event.target.parentElement;
+    const parentTask = event.target.closest(".card");
     const taskId = Number(parentTask.dataset.taskId);
     newTask.deleteTask(taskId);
     newTask.save();

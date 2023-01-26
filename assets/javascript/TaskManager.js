@@ -32,6 +32,7 @@ class TaskManager {
   }
   
   addTask() {
+
     const task = {
       id: this.currentId++,
       name: document.querySelector("#task-name").value,
@@ -102,7 +103,7 @@ class TaskManager {
   }
 }
 
-const newTask = new TaskManager();
+let newTask = new TaskManager();
 
 newTask.load();
 newTask.render();
