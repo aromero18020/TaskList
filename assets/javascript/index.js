@@ -31,7 +31,7 @@ tasksList.addEventListener('click', (event) => {
   }
 
   if (event.target.classList.contains('edit-button')) {
-    const parentTask = event.target.parentElement;
+    const parentTask = event.target.closest(".card");
     const taskId = Number(parentTask.dataset.taskId);
     const task = newTask.getTaskById(taskId);
     task.name = prompt('New Task Name:');
