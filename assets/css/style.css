@@ -299,7 +299,9 @@ hr {
   width: auto;
   border-radius: 50%;
 }
-
+.btn-dark:hover{
+  background-color: #e2a370;
+}
 .complete-button {
   width: auto;
   border-radius: 50%;
