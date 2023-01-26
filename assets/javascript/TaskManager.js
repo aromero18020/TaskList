@@ -13,9 +13,9 @@ function createTaskHtml(id, name, description, assignedTo, dueDate, status) {
     </div>
   </div>
   <div class="status-buttons">
-  <button type="button" class="complete-button btn btn-success ${status === 'In Progress' ? 'visible' : 'invisible'}"><i class="bi bi-check-square"></i></button>
-  <button type="button" class="edit-button btn btn-primary"><i class="bi bi-pencil-square"></i></button>
-  <button type="button" class="delete-button btn btn-danger"><i class="bi bi-trash3"></i></button>
+  <button type="button" class="complete-button btn btn-dark ${status === 'In Progress' ? 'visible' : 'invisible'}"><i class="bi bi-check-square"></i></button>
+  <button type="button" class="edit-button btn btn-dark"><i class="bi bi-pencil-square"></i></button>
+  <button type="button" class="delete-button btn btn-dark"><i class="bi bi-trash3"></i></button>
   </div>
 </div>
 `;
